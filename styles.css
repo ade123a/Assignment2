@@ -24,13 +24,13 @@ nav a:hover {
     text-decoration: underline;
 }
 
-main{
+ main{
     background-color: #d4d4d4;
     text-align: center;
     padding: 20px;
 }
 
-section {
+.homepage-body section {
     margin: 20px; 
 }
 
@@ -38,16 +38,16 @@ main h2{
     color: #003366;
 }
 
-.features{
+.homepage-body.features{
     font-weight: bold;
     margin-bottom:5px;
 }
 
-ul{
+.homepage-body ul{
     padding: 0px;
     margin: 0px;
 }
-ul li{
+.homepage-body ul li{
     list-style-type: '-';
     list-style-position: inside;
     padding: 10px;   
@@ -61,7 +61,7 @@ footer{
     text-align: center;
 }
 
-.login{
+.login-body .login{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -71,7 +71,7 @@ footer{
    
 }
 
-.form-group{
+.login-body .form-group{
     margin: 0px 0px 30px 0px;
     background-color: #d4d4d4;
     padding: 30px ;  
@@ -80,14 +80,14 @@ footer{
     
 }
 
-.form-group input{
+.login-body .form-group input{
     padding: 10px;
     background-color: lightyellow;
     border: darkgrey 3px solid;
     border-radius: 5px;
 }
 
-.login button{
+.login-body .login button{
     padding: 10px;
     background-color: #008000;
     color: white;
@@ -96,20 +96,20 @@ footer{
     cursor: pointer;
 }
 
-.login button:hover{
+.login-body .login button:hover{
     background-color: darkgreen;
 }
 
-.login a{
+.login-body .login a{
     text-decoration: none;
     color: #004080;
 }
 
-.login a:hover{
+.login-body .login a:hover{
     text-decoration: underline;
 }
 
-.form-group1{
+.login-body .form-group1{
     margin: 0px 150px;
     background-color: #d4d4d4;
     padding: 0px 30px ;
@@ -118,10 +118,10 @@ footer{
   
 }
 
-.form-group1 label{
+.login-body .form-group1 label{
     margin-bottom: 10px;
 }
 
-.form-group1 input:hover{
+.login-body .form-group1 input:hover{
     border: blue solid 3px
 }

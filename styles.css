@@ -60,3 +60,68 @@ footer{
     padding: 10px;
     text-align: center;
 }
+
+.login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin: 10px
+   
+}
+
+.form-group{
+    margin: 0px 0px 30px 0px;
+    background-color: #d4d4d4;
+    padding: 30px ;  
+    border-radius: 30px;
+    box-shadow: 8px 8px 25px rgba(0, 0, 0, 0.2);
+    
+}
+
+.form-group input{
+    padding: 10px;
+    background-color: lightyellow;
+    border: darkgrey 3px solid;
+    border-radius: 5px;
+}
+
+.login button{
+    padding: 10px;
+    background-color: #008000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login button:hover{
+    background-color: darkgreen;
+}
+
+.login a{
+    text-decoration: none;
+    color: #004080;
+}
+
+.login a:hover{
+    text-decoration: underline;
+}
+
+.form-group1{
+    margin: 0px 150px;
+    background-color: #d4d4d4;
+    padding: 0px 30px ;
+    display: flex;
+    flex-direction: column;
+  
+}
+
+.form-group1 label{
+    margin-bottom: 10px;
+}
+
+.form-group1 input:hover{
+    border: blue solid 3px
+}

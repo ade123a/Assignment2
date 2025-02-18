@@ -129,6 +129,10 @@ footer{
 
 /* ################### STYLING FOR leaderboard.html ################### */
 /* Table Styling */
+.leaderboard-body main{
+    padding: 20px 0px;
+}
+
 .leaderboard-body table {
     width: 100%;
     border-collapse: collapse;
@@ -136,10 +140,12 @@ footer{
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif; /* Set font for entire page */
 }
+
 .leaderboard-body th, td {
     padding: 10px;
-    border: 1px solid white; /* Changed border color to white */
+    border: 2px solid #d4d4d4; /* Changed border color to white */
 }
+
 /* Table Header */
 .leaderboard-body th {
     background-color: #4CAF50;
@@ -148,46 +154,52 @@ footer{
     padding: 15px;
     font-weight: bold;
 }
+
 /* Leaderboard Title Styling */
 .leaderboard-body th[colspan] {
-    color: white !important; /* Explicitly ensure white text for Leaderboard title */
+    color: white ; /* Explicitly ensure white text for Leaderboard title */
     font-size: 28px;
     text-align: center;
 }
+
 /* Second Row (Column Titles) Styling */
 .leaderboard-body th:not([colspan]) {
     color: black !important;
     font-weight: bold;
+    background-color:#d4d4d4; ;
 }
+
 /* Rank Row Styling */
 .leaderboard-body tr:nth-child(2) { /* 1st place */
     background-color: #FFD700;
 }
+
 .leaderboard-body tr:nth-child(3), tr:nth-child(4) { /* 2nd place (merged cells if tied) */
     background-color: #C0C0C0;
 }
+
 .leaderboard-body tr:nth-child(5) { /* 3rd place */
     background-color: #CD7F32;
 }
-/* Ensure Only First Two Rows are Bold */
-.leaderboard-body th, tr:nth-child(1) th, tr:nth-child(2) th {
-    font-weight: bold;
-}
-/* Remove Bold From Other Rows */
-.leaderboard-body td {
-    font-weight: normal;
-}
+
+
 /* Alternating Row Colors */
 .leaderboard-body tr:nth-child(even):not(:nth-child(2)):not(:nth-child(3)):not(:nth-child(4)):not(:nth-child(5)) {
     background-color: #f9f9f9;
 }
+
 .leaderboard-body tr:nth-child(odd):not(:nth-child(2)):not(:nth-child(3)):not(:nth-child(4)):not(:nth-child(5)) {
     background-color: #e4e2e2;
 }
+
 /* Profile Picture Circular Styling */
 .leaderboard-body td img {
     width: 50px;
     height: 50px;
     border-radius: 50%;
     border: 2px solid black; /* Added black border around profile pictures */
+}
+
+.leaderboard-body tr{
+    border: 2px solid #d4d4d4;
 }

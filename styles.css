@@ -61,6 +61,7 @@ footer{
     text-align: center;
 }
 
+/*Styling for Login.html */
 .login-body .login{
     display: flex;
     flex-direction: column;

@@ -38,7 +38,7 @@ main h2{
     color: #003366;
 }
 
-.homepage-body.features{
+.homepage-body .features{
     font-weight: bold;
     margin-bottom:5px;
 }
@@ -89,12 +89,13 @@ footer{
 }
 
 .login-body .login button{
-    padding: 10px;
+    padding: 10px 15px;
     background-color: #008000;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 15px;
 }
 
 .login-body .login button:hover{
@@ -125,6 +126,113 @@ footer{
 
 .login-body .form-group1 input:hover{
     border: blue solid 3px
+}
+
+/* Course-view Styling */
+
+#term{
+    background-color: lightyellow; 
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.course-view-body td{
+    background-color: #e6f2ff;
+    box-shadow: 2px 2px 8px rgba(142, 140, 140, 0.2);
+    padding: 20px;
+    margin: 15px;
+    border-radius: 10px;
+}
+
+.course-view-body .accept-button{
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.course-view-body .accept-button:hover{
+    background-color: #265e28;
+}
+
+.course-view-body .decline-button{
+    background-color: #D32F2F;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.course-view-body .decline-button:hover{
+    background-color: #821b1b;
+}
+
+.course-view-body .second, .first{
+    width: 100%;
+    display: table;    
+}
+
+
+.course-view-body img{
+   width: 100%;
+}
+
+/*Attempt Quiz Styling*/
+
+.attempt-quiz-body .banner{
+    width: 100%;
+    height: 150px;
+    border-radius: 5px;
+}
+
+.attempt-quiz-body .quiz-info{
+   background-color: lightblue;
+   padding:20px;
+   margin: 0px 250px
+}
+
+.attempt-quiz-body .question {
+    background-color: #cacaca;
+    padding: 15px;
+    margin: 0px 550px;
+    text-align: left;
+}
+
+.attempt-quiz-body .submit-button{
+    background-color: lightblue;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 20px 0px 0px 0px;
+
+}
+
+.attempt-quiz-body .submit-button:hover{
+    background-color: darkblue;
+    color: white;
+}
+
+.attempt-quiz-body .finish-button{
+    background-color: #D32F2F;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    
+}
+
+.attempt-quiz-body .finish-button:hover{
+    background-color: #821b1b;
 }
 
 /* ################### STYLING FOR leaderboard.html ################### */
@@ -179,56 +287,3 @@ footer{
     border: 2px solid black; /* Added black border around profile pictures */
 }
 
-/* Course-view Styling */
-
-#term{
-    background-color: lightyellow; 
-    border-radius: 5px;
-    padding: 5px;
-}
-
-.course-view-body td{
-    background-color: #e6f2ff;
-    box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.2);
-    padding: 20px;
-    margin: 15px;
-    border-radius: 10px;
-}
-
-.course-view-body .accept-button{
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.course-view-body .accept-button:hover{
-    background-color: #265e28;
-}
-
-.course-view-body .decline-button{
-    background-color: #D32F2F;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.course-view-body .decline-button:hover{
-    background-color: #821b1b;
-}
-
-.course-view-body .second, .first{
-    width: 100%;
-    display: table;    
-}
-
-
-.course-view-body img{
-   width: 100%;
-}

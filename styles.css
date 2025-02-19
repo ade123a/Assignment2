@@ -178,3 +178,57 @@ footer{
     border-radius: 50%;
     border: 2px solid black; /* Added black border around profile pictures */
 }
+
+/* Course-view Styling */
+
+#term{
+    background-color: lightyellow; 
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.course-view-body td{
+    background-color: #e6f2ff;
+    box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 15px;
+    border-radius: 10px;
+}
+
+.course-view-body .accept-button{
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.course-view-body .accept-button:hover{
+    background-color: #265e28;
+}
+
+.course-view-body .decline-button{
+    background-color: #D32F2F;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.course-view-body .decline-button:hover{
+    background-color: #821b1b;
+}
+
+.course-view-body .second, .first{
+    width: 100%;
+    display: table;    
+}
+
+
+.course-view-body img{
+   width: 100%;
+}

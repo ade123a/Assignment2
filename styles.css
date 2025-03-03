@@ -189,58 +189,136 @@ footer{
    width: 100%;
 }
 
-/*###############Attempt Quiz Styling #################*/
+/*############### Attempt Quiz Styling #################*/
 
-.attempt-quiz-body .banner{
+.attempt-quiz-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #cacaca;
+}
+
+/* Full-width header, navigation, and footer */
+header, nav, footer {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Make the navigation bar full width and match styling */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #003366;
+    padding: 10px;
+    width: 100%;
+}
+
+/* Style nav links to be evenly spaced */
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 18px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Make banner full width */
+.attempt-quiz-body .banner {
     width: 100%;
     height: 150px;
     border-radius: 5px;
 }
 
-.attempt-quiz-body .quiz-info{
-   background-color: lightblue;
-   padding:20px;
-   margin: 0px 250px
+/* Course & Quiz Details */
+.attempt-quiz-body .quiz-info {
+    background-color: lightblue;
+    padding: 20px;
+    width: 50%;
+    max-width: 800px;
+    text-align: center;
+    border-radius: 5px;
+    margin: 20px auto;
 }
 
+/* Ensure Course & Quiz Details text is bold */
+.attempt-quiz-body .quiz-info h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Style Quiz Questions */
 .attempt-quiz-body .question {
     background-color: #cacaca;
     padding: 15px;
-    margin: 0px 550px;
+    width: 50%;
+    max-width: 800px;
+    margin: 10px auto;
     text-align: left;
-    
+    border-radius: 5px;
 }
 
-.attempt-quiz-body .submit-button{
-    background-color: lightblue;
-    color: black;
-    padding: 10px 20px;
+.attempt-quiz-body .question label {
+    display: block;
+    padding: 5px 0;
+}
+
+/* Center Buttons and Make Them Responsive */
+.attempt-quiz-body .submit-button, 
+.attempt-quiz-body .finish-button {
+    width: auto;
+    max-width: 200px;
+    padding: 10px;
+    margin-top: 10px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin: 20px 0px 0px 0px;
-
+    font-size: 16px;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.attempt-quiz-body .submit-button:hover{
+/* Submit Button Styling */
+.attempt-quiz-body .submit-button {
+    background-color: lightblue;
+    color: black;
+}
+
+.attempt-quiz-body .submit-button:hover {
     background-color: darkblue;
     color: white;
 }
 
-.attempt-quiz-body .finish-button{
+/* Finish Quiz Button Styling */
+.attempt-quiz-body .finish-button {
     background-color: #D32F2F;
     color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    
 }
 
-.attempt-quiz-body .finish-button:hover{
+.attempt-quiz-body .finish-button:hover {
     background-color: #821b1b;
+}
+
+/* Responsive Design - Adjust for Smaller Screens */
+@media screen and (max-width: 768px) {
+    .attempt-quiz-body .quiz-info, .attempt-quiz-body .question {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .attempt-quiz-body .banner {
+        height: auto;
+    }
+
+    .attempt-quiz-body .submit-button, 
+    .attempt-quiz-body .finish-button {
+        width: 100%;
+        max-width: 180px;
+    }
 }
 
 
@@ -248,7 +326,7 @@ footer{
 
 /* Page Background Styling */
 .leaderboard-body {
-    background-color: #f0f0f0; /* Set entire page background to very light grey */
+    background-color: #d4d4d4; /* Set entire page background to very light grey */
 }
 
 /* Table Styling */

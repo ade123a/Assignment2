@@ -10,51 +10,70 @@
     <header>
         <img src="logo.jpg" alt="LMS Logo" style="width: 100px; height: 100px;">
         <h1>LMS - Learning Management System</h1>
-        <!--<h2>LMS - Attempt Quiz</h2>-->
     </header>
-    <div>
-        <nav>
-            <a href="index.html">Homepage</a> 
-            <a href="course_view.html">Courses</a> 
-        </nav>
-    </div>
+    
+    <nav>
+        <a href="index.html">Homepage</a> 
+        <a href="course_view.html">Courses</a> 
+    </nav>
+
     <main>
-        
-        <img class="banner" src="banner.jpg" alt="Quiz Banner" style="width: 100%;">
-        <div class="quiz-info">
-        <h2>Course: Web Development</h2>
-        <h2>Course Code: WD381</h2>
-        <p>Topic: HTML Basics</p>
-        <p>Deadline:11:59 PM, February 10, 2025</p>
-        <p>Attempts Allowed: 1</p>
-         </div>  
-        
-        <h3>Question 1</h3>
-        <p>What does HTML stand for?</p>
-        <div class="question">
-        <input type="radio" id="q1a" name="q1" value="Hyper Text Markup Language">
-        <label for="q1a">Hyper Text Markup Language</label><br>
-        <input type="radio" id="q1b" name="q1" value="Home Tool Markup Language">
-        <label for="q1b">Home Tool Markup Language</label><br>
-        </div>
-        <button class="submit-button">Submit Answer</button>
-        
-        <h3>Question 2</h3>
-        <p>Which of the following are HTML elements? (Select all that apply)</p>
-        <div class="question">
-        <input type="checkbox" id="q2a" name="q2" value="<div>">
-        <label for="q2a">&lt;div&gt;</label><br>
-        <input type="checkbox" id="q2b" name="q2" value="<span>">
-        <label for="q2b">&lt;span&gt;</label><br>
-        </div>
-        <button class="submit-button">Submit Answer</button>
-        
-        <br><br>
-        <form>
-            <button class ="finish-button" type="submit" formaction="leaderboard.html">Finish Quiz</button>
-            <br><br>
-        </form>
+        <section class="quiz-container">
+            <!-- Quiz Banner -->
+            <img class="banner" src="banner.jpg" alt="Quiz Banner">
+
+            <!-- Course and Quiz Info -->
+            <div class="quiz-info">
+                <h2>Course: Web Development</h2>
+                <h2>Course Code: WD381</h2>
+                <p>Topic: HTML Basics</p>
+                <p>Deadline: 11:59 PM, February 10, 2025</p>
+                <p>Attempts Allowed: 1</p>
+            </div>
+
+            <!-- Quiz Question 1 -->
+            <div class="quiz-question">
+                <h3>Question 1</h3>
+                <p>What does HTML stand for?</p>
+                <div class="question">
+                    <label>
+                        <input type="radio" name="q1" value="Hyper Text Markup Language"> 
+                        Hyper Text Markup Language
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q1" value="Home Tool Markup Language"> 
+                        Home Tool Markup Language
+                    </label>
+                </div>
+                <button class="submit-button">Submit Answer</button>
+            </div>
+
+            <!-- Quiz Question 2 -->
+            <div class="quiz-question">
+                <h3>Question 2</h3>
+                <p>Which of the following are HTML elements? (Select all that apply)</p>
+                <div class="question">
+                    <label>
+                        <input type="checkbox" name="q2" value="div"> 
+                        &lt;div&gt;
+                    </label><br>
+                    <label>
+                        <input type="checkbox" name="q2" value="span"> 
+                        &lt;span&gt;
+                    </label>
+                </div>
+                <button class="submit-button">Submit Answer</button>
+            </div>
+
+            <!-- Finish Quiz Button -->
+            <div class="quiz-controls">
+                <form>
+                    <button class="finish-button" type="submit" formaction="leaderboard.html">Finish Quiz</button>
+                </form>
+            </div>
+        </section>
     </main>
+
     <footer>
         <p>&copy; 2025 LMS. All rights reserved.</p>
     </footer>

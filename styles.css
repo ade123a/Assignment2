@@ -236,8 +236,7 @@ nav a:hover {
 .attempt-quiz-body .quiz-info {
     background-color: lightblue;
     padding: 20px;
-    width: 50%;
-    max-width: 800px;
+    width: min(90%, 800px); /* Instead of @media, use min() for responsiveness */
     text-align: center;
     border-radius: 5px;
     margin: 20px auto;
@@ -253,13 +252,13 @@ nav a:hover {
 .attempt-quiz-body .question {
     background-color: #cacaca;
     padding: 15px;
-    width: 50%;
-    max-width: 800px;
+    width: min(90%, 800px); /* Use min() for responsive width */
     margin: 10px auto;
     text-align: left;
     border-radius: 5px;
 }
 
+/* Ensure question labels are properly spaced */
 .attempt-quiz-body .question label {
     display: block;
     padding: 5px 0;
@@ -303,22 +302,10 @@ nav a:hover {
     background-color: #821b1b;
 }
 
-/* Responsive Design - Adjust for Smaller Screens */
-@media screen and (max-width: 768px) {
-    .attempt-quiz-body .quiz-info, .attempt-quiz-body .question {
-        width: 90%;
-        margin: 10px auto;
-    }
-
-    .attempt-quiz-body .banner {
-        height: auto;
-    }
-
-    .attempt-quiz-body .submit-button, 
-    .attempt-quiz-body .finish-button {
-        width: 100%;
-        max-width: 180px;
-    }
+/* Ensure Buttons Scale Properly Without @media */
+.attempt-quiz-body .submit-button, 
+.attempt-quiz-body .finish-button {
+    width: min(90%, 180px); /* This keeps them responsive */
 }
 
 
